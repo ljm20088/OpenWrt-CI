@@ -86,10 +86,10 @@ jobs:
       - name: Download lede
         run: |
           git clone https://github.com/coolsnowwolf/lede
-          cp .config ./lede/.config
-          mv ./lede/* ./
       - name: Install Helloword
         run: |
+          cp .config ./lede/.config
+          mv ./lede/* ./
           echo "src-git helloworld https://github.com/fw876/helloworld" >> ./feeds.conf.default 
       - name: Install OpenClash
         run: |
